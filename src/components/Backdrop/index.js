@@ -102,13 +102,7 @@ export const Backdrop = ({movies = [], scrollX}) => {
           <View key={m.key} style={[styles.contentContainer]}>
             <Animated.Image
               source={{uri: movies[index].backdrop}}
-              style={[
-                styles.image,
-                {
-                  zIndex: movies.length - index,
-                  transform: [{translateX}],
-                },
-              ]}
+              style={[styles.image, {transform: [{translateX}]}]}
             />
           </View>
         );
